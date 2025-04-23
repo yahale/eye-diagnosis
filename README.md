@@ -18,21 +18,22 @@ A FastAPI-based web application for diagnosing eye conditions from images, with 
 ### Using Docker (Recommended)
 ```bash
 # Pull the pre-built image (includes ML models)
-docker pull yourdockerhub/eye-diagnosis-app:latest
+docker pull yahale/eye-diagnosis-app:latest
 
 # Run the application
-docker run -p 8000:8000 yourdockerhub/eye-diagnosis-app
+docker run -p 8000:8000 yahale/eye-diagnosis-app
 
-Access the app at: http://localhost:8000
-
+# Access the app at: http://localhost:8000
+```
 
 ## Quick Start (For Developers)
-###Setup Guide
-####Clone and prepare models:
-git clone https://github.com/yourusername/eye-diagnosis.git
+
+```bash
+# Clone and prepare models:
+git clone https://github.com/yahale/eye-diagnosis.git
 cd eye-diagnosis
 
-###Build with Docker:
+# Build with Docker:
 docker build -t eye-app . 
 docker run -p 8000:8000 eye-app
-
+```
