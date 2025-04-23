@@ -27,3 +27,12 @@ Access the app at: http://localhost:8000
 
 
 ## Quick Start (For Developers)
+###Setup Guide
+####Clone and prepare models:
+git clone https://github.com/yourusername/eye-diagnosis.git
+cd eye-diagnosis
+
+###Build with Docker:
+docker build -t eye-app . 
+docker run -p 8000:8000 eye-app
+
